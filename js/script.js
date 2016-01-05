@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     var add_new_muffin = function( event ) {
     
-    	var width = Math.round(Math.random()* 200) + "px"
+    	var width = Math.round(Math.random()* 300) + "px"
     	var top = Math.round(Math.random()* 800) + "px"
     	var left = Math.round(Math.random()* 1000) + "px"
 
@@ -18,4 +18,12 @@ $(document).ready(function() {
     };
 
     $("#projects").on("click", ".galleryimage", add_new_muffin);
+
+
+    var muffin_amount = prompt("How many muffins would you like to add?");
+    if (muffin_amount > 0){
+    	for (var i = 0; i < muffin_amount; i++) {
+            add_new_muffin();
+        }
+  	}
 });
