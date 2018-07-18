@@ -1,3 +1,3 @@
 
-		http://nynnechristoffersen.com/muffinmuch/
+		http://nynnechristoffersen.com/muffin/
 
